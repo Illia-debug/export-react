@@ -1,0 +1,39 @@
+import type {IProduct} from "../../modules/IProduct.ts";
+import type {FC} from "react";
+import Tags from "../item Components/tags/Tags.tsx";
+
+export type ProductPropType = {
+    item: IProduct
+}
+const Product: FC<ProductPropType> = ({item}: ProductPropType) => {
+    console.log('1')
+    return (
+        <>
+
+            <div>{item.id}</div>
+            <div>{item.title}</div>
+            <div>{item.description}</div>
+            <div>{item.category}</div>
+            <div>{item.price}</div>
+            <div>{item.discountPercentage}</div>
+            <div>{item.rating}</div>
+            <div>{item.stock}</div>
+            <div>{item.brand}</div>
+            <div>{item.sku}</div>
+            <div>{item.weight}</div>
+            <div>{item.warrantyInformation}</div>
+            <div>{item.shippingInformation}</div>
+            <div>{item.availabilityStatus}</div>
+            <div>{item.returnPolicy}</div>
+            <div>{item.returnPolicy}</div>
+            <div>{item.minimumOrderQuantity}</div>
+            <div>{item.thumbnail}</div>
+            <ul>
+                Tags:
+                <Tags item={item}/>
+            </ul>
+
+        </>
+    );
+};
+export default Product
