@@ -1,6 +1,9 @@
 import type {IProduct} from "../../modules/IProduct.ts";
 import type {FC} from "react";
 import Tags from "../item Components/tags/Tags.tsx";
+import {Dimensions} from "../item Components/dimensions/Dimensions.tsx";
+import Reviews from "../item Components/reviews/Reviews.tsx";
+import Meta from "../item Components/meta/Meta.tsx";
 
 export type ProductPropType = {
     item: IProduct
@@ -32,6 +35,20 @@ const Product: FC<ProductPropType> = ({item}: ProductPropType) => {
                 Tags:
                 <Tags item={item}/>
             </ul>
+            <ul>
+                Dimensions:
+                <Dimensions item={item}/>
+            </ul>
+            <ul>
+                Reviews:
+                <Reviews item={item}/>
+
+            </ul>
+            <ul>
+                Meta:
+                <Meta item={item}/>
+            </ul>
+            <img src={item.images[0]} alt="product"/>
 
         </>
     );

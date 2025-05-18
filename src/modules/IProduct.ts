@@ -9,7 +9,7 @@
 	height: number;
 	depth: number;
 }
- interface RootObjectProductsReviews {
+ export interface RootObjectProductsReviews {
 	rating: number;
 	comment: string;
 	date: string;
