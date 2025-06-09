@@ -1,7 +1,11 @@
+import {PostsHolder} from "../../Components/PostsHolder/PostsHolder/PostsHolder.tsx";
+
 export const PostsPageHolder = () => {
     return (
         <>
-        Post holder content
+       <div>
+           <PostsHolder/>
+       </div>
         </>
     );
 };

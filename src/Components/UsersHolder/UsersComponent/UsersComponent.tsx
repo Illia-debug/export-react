@@ -13,7 +13,7 @@ export const UsersComponent: FC = () => {
     return (
         <>
             {
-                users.map(user=><UserComponent item={user} key={user.id}/>)
+                users.map((user)=><UserComponent item={user} key={user.id}/>)
             }
         </>
     );

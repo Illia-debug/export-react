@@ -1,7 +1,9 @@
+import {CommentsHolder} from "../../Components/CommentsHolder/CommentsHolder/CommentsHolder.tsx";
+
 export const CommentsPageHolder = () => {
     return (
         <>
-            comments holder content
+            <CommentsHolder/>
         </>
     );
 };

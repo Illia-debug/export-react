@@ -1,7 +1,11 @@
+import {PostsDummy} from "../../Components/PostsDummy/PostsDummy/PostsDummy.tsx";
+
 export const PostsPageDummy = () => {
     return (
         <>
-        posts dummy content
+        <div>
+            <PostsDummy/>
+        </div>
         </>
     );
 };

@@ -7,11 +7,21 @@ export const urlsHolder = {
             return baseUrlHolder + '/' + id
         }//це якщо треба по айді
     },
-    posts: {}
+    posts: {
+        allPosts: baseUrlHolder + '/posts'
+    },
+    comments: {
+        allComments:baseUrlHolder+'/comments'
+    }
 }
 export const urlsDummy = {
     users: {
         allUsers:baseDummy+'/users'
     },
-    posts: {}
+    posts: {
+        allPosts:baseDummy+'/posts'
+    },
+    comments: {
+        allComments:baseDummy+'/comments'
+    }
 }
